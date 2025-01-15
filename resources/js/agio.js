@@ -1,3 +1,17 @@
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css"; // Importa os estilos do Flatpickr
+
+// Inicializa o Flatpickr nos campos de data
+flatpickr("#data_nascimento", {
+    dateFormat: "Y-m-d", // Formato de data: Ano-Mês-Dia
+    locale: "pt", // Define o idioma para português
+    maxDate: "today", // Impede selecionar datas futuras
+    altInput: true, // Exibe um campo alternativo para a data no formato legível
+    altFormat: "d/m/Y", // Formato alternativo de data
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Seleciona todos os nav links
     const navLinks = document.querySelectorAll('.nav-link');
