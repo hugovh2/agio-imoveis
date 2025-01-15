@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     @vite(['resources/css/app.css', 'resources/js/agio.js'])
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             transition: background-color 1s ease;
@@ -35,100 +36,96 @@
     </style>
 </head>
 
+
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-    <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-8">
-        <h1 class="text-3xl text-gray-800 font-semibold text-center mb-4">Crie seu Perfil</h1>
-        <p class="text-gray-600 text-center mb-6">Insira seus dados para criar sua conta</p>
+    <div class="bg-white shadow-lg rounded-lg w-full max-w-sm p-6 sm:p-8">
+        <h1 class="text-xl sm:text-3xl text-gray-800 font-semibold text-center mb-4">Crie seu Perfil</h1>
+        <p class="text-gray-600 text-center mb-4 sm:mb-6">Insira seus dados para criar sua conta</p>
 
         <form action="{{ route('register.store') }}" method="POST" id="registration-form">
             @csrf
-            <div class="mb-6">
+            <div class="mb-4 sm:mb-6">
                 <label for="user-type" class="block text-gray-700 text-sm mb-2">Tipo de Usuário</label>
                 <select id="user-type" name="user_type"
-                    class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                    class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+                    required>
                     <option value="">Selecionar</option>
                     <option value="cpf">Pessoa Física (CPF)</option>
                     <option value="cnpj">Pessoa Jurídica (CNPJ)</option>
                 </select>
             </div>
 
-            <div class="mb-6">
+            <div class="mb-4 sm:mb-6">
                 <label for="email" class="block text-gray-700 text-sm mb-2">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
-                    class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                    class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+                    required>
             </div>
 
-            <div class="mb-6">
+            <div class="mb-4 sm:mb-6">
                 <label for="password" class="block text-gray-700 text-sm mb-2">Senha</label>
                 <input type="password" id="password" name="password" placeholder="De 6 a 20 caracteres"
-                    class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                    class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+                    required>
             </div>
 
             <!-- Campos CPF -->
             <div id="cpf-fields" class="conditional-fields hidden">
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="cpf" class="block text-gray-700 text-sm mb-2">CPF</label>
                     <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="nome_completo" class="block text-gray-700 text-sm mb-2">Nome Completo</label>
                     <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite seu nome completo"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="data_nascimento" class="block text-gray-700 text-sm mb-2">Data de Nascimento</label>
                     <input type="text" id="data_nascimento" name="data_nascimento"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
             </div>
 
             <!-- Campos CNPJ -->
             <div id="cnpj-fields" class="conditional-fields hidden">
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="cnpj" class="block text-gray-700 text-sm mb-2">CNPJ</label>
                     <input type="text" id="cnpj" name="cnpj" placeholder="Digite seu CNPJ"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="company-name" class="block text-gray-700 text-sm mb-2">Razão Social</label>
                     <input type="text" id="company-name" name="company_name" placeholder="Digite a razão social"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="trade-name" class="block text-gray-700 text-sm mb-2">Nome Fantasia</label>
                     <input type="text" id="trade-name" name="trade_name" placeholder="Digite o nome fantasia"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="mb-6">
+                <div class="mb-4 sm:mb-6">
                     <label for="phone" class="block text-gray-700 text-sm mb-2">Telefone</label>
                     <input type="tel" id="phone" name="phone" placeholder="Digite o telefone"
-                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+                        class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
                 </div>
             </div>
 
-            <div class="flex items-center mb-6">
+            <div class="flex items-center mb-4 sm:mb-6">
                 <input type="checkbox" id="terms" name="terms" class="mr-2" required>
                 <label for="terms" class="text-sm text-gray-600">Aceito os <a href="#" class="text-blue-500">Termos e
                         Condições</a></label>
             </div>
 
             <button type="submit"
-                class="w-full p-3 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition duration-300">
+                class="w-full p-2 sm:p-3 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition duration-300">
                 Cadastrar
             </button>
         </form>
     </div>
 
     <script>
-        flatpickr("#data_nascimento", {
-            dateFormat: "d/m/Y", // Formato da data
-            locale: "pt", // Localização em português
-            theme: "light", // Tema do calendário
-            altInput: true, // Mostrar um campo de entrada alternativo
-            altFormat: "d/m/Y", // Formato da data para o campo alternativo
-            allowInput: true, // Permitir input manual
-        });
         // Lógica para mostrar/ocultar campos de CPF/CNPJ
         document.getElementById('user-type').addEventListener('change', function () {
             const userType = this.value;
