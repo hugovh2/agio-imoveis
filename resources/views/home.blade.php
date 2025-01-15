@@ -34,10 +34,10 @@
         </nav>
     </header>
 
-    <div class="hero-section d-flex flex-column align-items-center">
+    <div class="hero-section d-flex flex-column align-items-center text-center bg-light py-5">
         <h1 class="mb-4">Casa Nova, Vida Nova</h1>
-        <div class="filter-container">
-            <ul class="nav nav-tabs justify-content-center">
+        <div class="filter-container w-100">
+            <ul class="nav nav-tabs justify-content-center mb-3">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Comprar</a>
                 </li>
@@ -51,17 +51,18 @@
                     <a class="nav-link" href="#">Leilão</a>
                 </li>
             </ul>
-            <div class="filter-box mt-3">
-                <select>
+            <div class="filter-box mt-3 d-flex flex-column flex-md-row">
+                <select class="form-select mb-2 mb-md-0 me-md-2">
                     <option>Apartamento (Todos)</option>
                     <option>Casa</option>
                     <option>Terreno</option>
                 </select>
-                <input type="text" placeholder="Digite cidades ou bairros ou características (ex: piscina)">
-                <button>Buscar</button>
+                <input type="text" class="form-control mb-2 mb-md-0 me-md-2" placeholder="Digite cidades ou bairros ou características (ex: piscina)">
+                <button class="btn btn-primary">Buscar</button>
             </div>
         </div>
     </div>
+
 
     <section id="imoveis" class="imoveis-section">
         <h1 class="title">Mais imóveis semelhantes às que você viu</h1>

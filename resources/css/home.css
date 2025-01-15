@@ -76,6 +76,7 @@ body {
     padding: 20px; /* Add padding for better spacing */
 }
 
+
 .hero-section h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -92,6 +93,7 @@ body {
     gap: 10px;
     align-items: center;
 }
+
 
 .filter-box button {
     background-color: #ff4d4d;
@@ -552,4 +554,67 @@ body {
 .steps .step p {
     font-size: 14px;
     color: #666;
+}
+
+
+/* Novo CSS */
+
+.filter-container .nav-tabs .nav-link {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.filter-container .nav-tabs .nav-link.active {
+    color: #ff4d4d;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-box select,
+.filter-box input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.filter-box button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-box button:hover {
+    background-color: #ff4d4d;
+}
+
+#imoveis {
+    overflow-y: scroll; /* Garante que a barra de rolagem apareça */
+    scrollbar-width: thin; /* Para navegadores compatíveis (Firefox) */
+    scrollbar-color: white transparent; /* Cor do scroll e do fundo do scroll (Firefox) */
+}
+
+#imoveis::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+#imoveis::-webkit-scrollbar-track {
+    background: transparent; /* Cor do fundo do track da barra */
+}
+
+#imoveis::-webkit-scrollbar-thumb {
+    background-color: white; /* Cor do scroll */
+    border-radius: 10px; /* Deixa o scroll arredondado */
+    border: 2px solid transparent; /* Adiciona espaçamento entre o scroll e o track */
+    background-clip: content-box; /* Faz com que a cor de fundo apareça */
 }
