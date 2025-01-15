@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    @vite(['resources/css/login.css', 'resources/js/agio.js'])
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="login-container">
-        <h1>Olá!</h1>
-        <p>Faça login na sua conta e acesse os avisos que você contatou, seus favoritos, pesquisas salvas e muito mais!</p>
-        <input type="email" placeholder="Digite seu e-mail">
-        <button>Continuar</button>
-        <div class="divider"></div>
-        <div class="social-login">
-            <!-- <img src="https://via.placeholder.com/40" alt="Google">
-            <img src="https://via.placeholder.com/40" alt="Facebook">
-            <img src="https://via.placeholder.com/40" alt="Apple"> -->
-        </div>
-        <p class="register">
-            É imobiliária ou corretor ou não tem uma conta? <a onclick="window.location.href='registro'">Registre-se</a>
-        </p>
+<body class="bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center min-h-screen p-4">
+  <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+    <!-- Logo -->
+    <div class="flex items-center justify-center mb-6">
+      <div class="bg-red-500 text-white p-4 rounded-full">
+        <i class="fas fa-rocket text-2xl sm:text-3xl"></i>
+      </div>
     </div>
+    <h1 class="text-xl sm:text-2xl font-bold text-red-600 mb-4 text-center">Bem-vindo de volta!</h1>
+    <p class="text-gray-600 text-sm mb-6 text-center">Acesse sua conta para aproveitar ao máximo nossos serviços!</p>
+
+    <!-- Formulário -->
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email"
+               class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500 text-sm sm:text-base">
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha"
+               class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500 text-sm sm:text-base">
+      </div>
+
+      <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 sm:py-3 rounded-md transition">
+        <i class="fas fa-sign-in-alt"></i> Entrar
+      </button>
+    </form>
+
+    <!-- Divisor -->
+    <div class="flex items-center my-4 sm:my-6">
+      <hr class="flex-grow border-gray-300">
+      <span class="px-4 text-gray-500 text-sm sm:text-base">ou</span>
+      <hr class="flex-grow border-gray-300">
+    </div>
+
+    <!-- Botões Sociais -->
+    <div class="flex justify-around">
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-google text-red-500 text-lg sm:text-xl"></i>
+      </button>
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-facebook-f text-blue-500 text-lg sm:text-xl"></i>
+      </button>
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-apple text-black text-lg sm:text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Registro -->
+    <p class="text-xs sm:text-sm text-center text-gray-600 mt-4 sm:mt-6">
+      Não tem uma conta? <a href="registro" class="text-red-500 font-bold hover:underline">Registre-se</a>
+    </p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Login realizado com sucesso!');
+    });
+  </script>
 </body>
 </html>

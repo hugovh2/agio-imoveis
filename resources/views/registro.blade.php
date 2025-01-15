@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     @vite(['resources/css/app.css', 'resources/js/agio.js'])
+    <style>
+        body {
+            transition: background-color 1s ease;
+        }
+
+        body:hover {
+            animation: colorShift 5s infinite;
+        }
+
+        @keyframes colorShift {
+            0% {
+                background-color: #FF4D4D;
+            }
+
+            25% {
+                background-color: #FF8500;
+            }
+
+            75% {
+                background-color: #FF8500;
+            }
+
+            100% {
+                background-color: #FF4D4D;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100 flex justify-center items-center min-h-screen">
@@ -17,7 +44,8 @@
             @csrf
             <div class="mb-6">
                 <label for="user-type" class="block text-gray-700 text-sm mb-2">Tipo de Usuário</label>
-                <select id="user-type" name="user_type" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" required>
+                <select id="user-type" name="user_type"
+                    class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" required>
                     <option value="">Selecionar</option>
                     <option value="cpf">Pessoa Física (CPF)</option>
                     <option value="cnpj">Pessoa Jurídica (CNPJ)</option>
