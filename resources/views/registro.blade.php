@@ -41,12 +41,12 @@
                         <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
                     </div>
                     <div class="input-group">
-                        <label for="full-name">Nome Completo</label>
-                        <input type="text" id="full-name" name="full_name" placeholder="Digite seu nome completo">
+                        <label for="nome_completo">Nome Completo</label>
+                        <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite seu nome completo">
                     </div>
                     <div class="input-group">
-                        <label for="birth-date">Data de Nascimento</label>
-                        <input type="date" id="birth-date" name="birth_date">
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento">
                     </div>
                 </div>
 
