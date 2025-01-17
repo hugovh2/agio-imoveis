@@ -20,6 +20,10 @@ class UsuarioController extends Controller
          return view('registro');
      }
 
+     public function showSobre()
+     {
+         return view('sobre');
+     }
 
 
      // Função para processar o envio do formulário

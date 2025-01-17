@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('login');
 });
 
+Route::get('/', function () {
+    return view('sobre');
+});
+
 
 Route::get('/login', [UsuarioController::class, 'showLogin'])->name('login.form');
 
@@ -26,7 +30,7 @@ Route::get('/registro', [UsuarioController::class, 'showForm'])->name('register.
 
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
-
+Route::get('/sobre', [UsuarioController::class, 'showSobre'])->name('sobre.form');
 
 
 Route::get('/home', [HomeController::class, 'home'])->name('home.form');

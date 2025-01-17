@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="../js/agio.js"></script>
     @vite(['resources/css/home.css', 'resources/js/agio.js'])
-
 </head>
 
 <body>
     <header>
         <nav class="navbar d-flex justify-content-between align-items-center">
             <div class="navbar-logo d-flex align-items-center">
-                <span>Ágio Imóveis</span>
+                <span onclick="window.location.href='home'">Ágio Imóveis</span>
             </div>
 
             <div class="navbar-links">
-                <a href="#">Ágios</a>
-                <a href="#">Explorar</a>
+                <a onclick="window.location.href='home'">Ágios</a>
+                <a onclick="window.location.href='sobre'">Explorar</a>
                 <a href="#">Planos</a>
                 <a href="#">Serviços</a>
             </div>
@@ -57,7 +56,8 @@
                     <option>Casa</option>
                     <option>Terreno</option>
                 </select>
-                <input type="text" class="form-control mb-2 mb-md-0 me-md-2" placeholder="Digite cidades ou bairros ou características (ex: piscina)">
+                <input type="text" class="form-control mb-2 mb-md-0 me-md-2"
+                    placeholder="Digite cidades ou bairros ou características (ex: piscina)">
                 <button class="btn btn-primary">Buscar</button>
             </div>
         </div>
@@ -164,16 +164,23 @@
                 <div class="step">
                     <!-- <img src="" alt="Variedade de anunciantes"> -->
                     <h3>Variedade de anunciantes</h3>
-                    <p>Corretores e proprietários diretos de todo o Brasil com as melhores opções para você encontrar o imóvel ideal.</p>
+                    <p>Corretores e proprietários diretos de todo o Brasil com as melhores opções para você encontrar o
+                        imóvel ideal.</p>
                 </div>
                 <div class="step">
                     <!-- <img src="" alt="Sua escolha de confiança"> -->
                     <h3>Sua escolha de confiança</h3>
-                    <p>Com 25 anos de experiência no mercado, estamos prontos para ajudar você a encontrar seu novo lar.</p>
+                    <p>Com 25 anos de experiência no mercado, estamos prontos para ajudar você a encontrar seu novo lar.
+                    </p>
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- Ícone flutuante do WhatsApp -->
+    <a href="https://wa.me/556198116408?text=Olá,%20estou%20buscando%20informações%20sobre%20ágio%20de%20imóveis.%20Poderia%20me%20ajudar?" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <footer class="bg-light text-dark text-center py-4">
         <div class="container">

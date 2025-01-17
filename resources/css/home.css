@@ -618,3 +618,31 @@ body {
     border: 2px solid transparent; /* Adiciona espaçamento entre o scroll e o track */
     background-clip: content-box; /* Faz com que a cor de fundo apareça */
 }
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #22b358;
+    cursor: pointer;
+}
+
+.whatsapp-float i {
+    line-height: 60px;
+}
