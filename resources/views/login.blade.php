@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center min-h-screen p-4">
+
+<body class="bg-gradient-to-r from-[#3EA76F] via-[#48C78E] to-[#A7EBC1] flex items-center justify-center min-h-screen p-4">
   <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
     <!-- Logo -->
     <div class="flex items-center justify-center mb-6">
-      <div class="bg-red-500 text-white p-4 rounded-full">
+      <div class="bg-green-500 text-white p-4 rounded-full">
         <i class="fas fa-rocket text-2xl sm:text-3xl"></i>
       </div>
     </div>
-    <h1 class="text-xl sm:text-2xl font-bold text-red-600 mb-4 text-center">Bem-vindo de volta!</h1>
+    <h1 class="text-xl sm:text-2xl font-bold text-green-600 mb-4 text-center">Bem-vindo de volta!</h1>
     <p class="text-gray-600 text-sm mb-6 text-center">Acesse sua conta para aproveitar ao máximo nossos serviços!</p>
 
     <!-- Formulário -->
@@ -23,16 +25,17 @@
       <div>
         <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
         <input type="email" id="email" name="email" placeholder="Digite seu email"
-               class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500 text-sm sm:text-base">
+          class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 text-sm sm:text-base">
       </div>
 
       <div>
         <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
         <input type="password" id="password" name="password" placeholder="Digite sua senha"
-               class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500 text-sm sm:text-base">
+          class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 text-sm sm:text-base">
       </div>
 
-      <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 sm:py-3 rounded-md transition">
+      <button type="submit"
+        class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 sm:py-3 rounded-md transition">
         <i class="fas fa-sign-in-alt"></i> Entrar
       </button>
     </form>
@@ -59,16 +62,17 @@
 
     <!-- Registro -->
     <p class="text-xs sm:text-sm text-center text-gray-600 mt-4 sm:mt-6">
-      Não tem uma conta? <a href="registro" class="text-red-500 font-bold hover:underline">Registre-se</a>
+      Não tem uma conta? <a href="registro" class="text-green-500 font-bold hover:underline">Registre-se</a>
     </p>
   </div>
 
   <!-- Script -->
   <script>
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
       e.preventDefault();
       alert('Login realizado com sucesso!');
     });
   </script>
 </body>
+
 </html>

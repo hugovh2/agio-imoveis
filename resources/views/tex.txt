@@ -7,9 +7,37 @@
     <title>Registro</title>
     @vite(['resources/css/app.css', 'resources/js/agio.js'])
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            transition: background-color 1s ease;
+        }
+
+        body:hover {
+            animation: colorShift 5s infinite;
+        }
+
+        @keyframes colorShift {
+            0% {
+                background-color: #FF4D4D;
+            }
+
+            25% {
+                background-color: #FF8500;
+            }
+
+            75% {
+                background-color: #FF8500;
+            }
+
+            100% {
+                background-color: #FF4D4D;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-gradient-to-r from-[#3EA76F] via-[#48C78E] to-[#A7EBC1] flex justify-center items-center min-h-screen">
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
     <div class="bg-white shadow-lg rounded-lg w-full max-w-sm p-6 sm:p-8">
         <h1 class="text-xl sm:text-3xl text-gray-800 font-semibold text-center mb-4">Crie seu Perfil</h1>
         <p class="text-gray-600 text-center mb-4 sm:mb-6">Insira seus dados para criar sua conta</p>
@@ -86,12 +114,12 @@
 
             <div class="flex items-center mb-4 sm:mb-6">
                 <input type="checkbox" id="terms" name="terms" class="mr-2" required>
-                <label for="terms" class="text-sm text-gray-600">Aceito os <a href="#" class="text-highlight">Termos e
+                <label for="terms" class="text-sm text-gray-600">Aceito os <a href="#" class="text-blue-500">Termos e
                         Condições</a></label>
             </div>
 
             <button type="submit"
-            class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 sm:py-3 rounded-md transition">
+                class="w-full p-2 sm:p-3 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition duration-300">
                 Cadastrar
             </button>
         </form>
