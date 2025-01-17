@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define as URLs das imagens correspondentes a cada link
     const images = {
-        'Comprar': 'https://img10.naventcdn.com/home/RPHOMv4.195.0-RC2/images/dfp-venta.jpg',
+        'Comprar': 'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grq6lwb4htd1/b/tecimob-production/o/media/95f2bf47-1b33-47ff-8a3e-351888d06d70/settings/main-images/234f8eb1-01b2-4efe-bd19-d745dd744be6.jpg',
         'Alugar': 'https://images.pexels.com/photos/30099429/pexels-photo-30099429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         'Imóvel Novo': 'https://images.pexels.com/photos/30092167/pexels-photo-30092167/free-photo-of-arquitetura-historica-europeia-com-fachada-ornamentada.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         'Leilão': 'https://images.pexels.com/photos/30108621/pexels-photo-30108621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
