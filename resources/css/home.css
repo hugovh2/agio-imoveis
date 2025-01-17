@@ -7,44 +7,54 @@ body {
 
 .navbar {
     background-color: #fff;
-    padding: 10px 20px; /* Reduzindo o padding para diminuir a navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    padding: 10px 20px;
+    /* Reduzindo o padding para diminuir a navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar-logo img {
-    height: 30px; /* Diminuir a altura da imagem */
+    height: 30px;
+    /* Diminuir a altura da imagem */
 }
 
 .navbar-logo span {
     font-weight: bold;
-    font-size: 20px; /* Reduzir o tamanho da fonte */
+    font-size: 20px;
+    /* Reduzir o tamanho da fonte */
     margin-left: 10px;
 }
 
 .navbar-links a {
-    margin: 0 10px; /* Diminuir a margem entre os links */
-    font-size: 14px; /* Reduzir o tamanho da fonte */
+    margin: 0 10px;
+    /* Diminuir a margem entre os links */
+    font-size: 14px;
+    /* Reduzir o tamanho da fonte */
     color: #333;
     text-decoration: none;
 }
 
+/* Efeito de linha verde ao passar o mouse */
 .navbar-links a:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid #3EA76F;
+    /* Listra verde ao passar o mouse */
+    padding-bottom: 2px;
+    /* Pequeno espaçamento para a linha */
 }
 
 .navbar-buttons .button {
     border: none;
-    padding: 8px 16px; /* Diminuir o padding dos botões */
+    padding: 8px 16px;
+    /* Diminuir o padding dos botões */
     margin-left: 10px;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 14px; /* Reduzir o tamanho da fonte dos botões */
+    font-size: 14px;
+    /* Reduzir o tamanho da fonte dos botões */
 }
-
-
 
 .button-download {
     background-color: #ff4d4d;
@@ -71,9 +81,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Ensure text is readable */
-    text-align: center; /* Center align text */
-    padding: 20px; /* Add padding for better spacing */
+    color: white;
+    /* Ensure text is readable */
+    text-align: center;
+    /* Center align text */
+    padding: 20px;
+    /* Add padding for better spacing */
 }
 
 
@@ -104,7 +117,8 @@ body {
     font-weight: bold;
 }
 
-.filter-box input, .filter-box select {
+.filter-box input,
+.filter-box select {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -117,23 +131,32 @@ body {
 }
 
 .nav-tabs .nav-link {
-    background-color: white; /* Define o fundo branco */
-    color: black; /* Cor do texto */
+    background-color: white;
+    /* Define o fundo branco */
+    color: black;
+    /* Cor do texto */
     padding: 10px 20px;
-    border: 1px solid transparent; /* Bordas transparentes inicialmente */
+    border: 1px solid transparent;
+    /* Bordas transparentes inicialmente */
 }
 
 .nav-tabs .nav-link.active {
-    background-color: white; /* Fundo branco para o link ativo */
-    border-bottom: 3px solid #ff4d4d; /* Sublinhar o link ativo */
-    color: black; /* Cor do texto */
+    background-color: white;
+    /* Fundo branco para o link ativo */
+    border-bottom: 3px solid #ff4d4d;
+    /* Sublinhar o link ativo */
+    color: black;
+    /* Cor do texto */
 }
 
 .nav-tabs .nav-link:hover {
-    background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
-    border-color: #dee2e6; /* Cor da borda ao passar o mouse */
+    background-color: #f8f9fa;
+    /* Fundo claro ao passar o mouse */
+    border-color: #dee2e6;
+    /* Cor da borda ao passar o mouse */
     text-decoration: none;
 }
+
 /* /////////////// imagem de texto como apresentação ////////////////////// */
 .container {
     max-width: 1200px;
@@ -268,6 +291,7 @@ body {
 .centered-text {
     text-align: center;
 }
+
 .faq-section {
     display: flex;
     gap: 2rem;
@@ -599,25 +623,35 @@ body {
 }
 
 #imoveis {
-    overflow-y: scroll; /* Garante que a barra de rolagem apareça */
-    scrollbar-width: thin; /* Para navegadores compatíveis (Firefox) */
-    scrollbar-color: white transparent; /* Cor do scroll e do fundo do scroll (Firefox) */
+    overflow-y: scroll;
+    /* Garante que a barra de rolagem apareça */
+    scrollbar-width: thin;
+    /* Para navegadores compatíveis (Firefox) */
+    scrollbar-color: white transparent;
+    /* Cor do scroll e do fundo do scroll (Firefox) */
 }
 
 #imoveis::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
+    width: 8px;
+    /* Largura da barra de rolagem */
 }
 
 #imoveis::-webkit-scrollbar-track {
-    background: transparent; /* Cor do fundo do track da barra */
+    background: transparent;
+    /* Cor do fundo do track da barra */
 }
 
 #imoveis::-webkit-scrollbar-thumb {
-    background-color: white; /* Cor do scroll */
-    border-radius: 10px; /* Deixa o scroll arredondado */
-    border: 2px solid transparent; /* Adiciona espaçamento entre o scroll e o track */
-    background-clip: content-box; /* Faz com que a cor de fundo apareça */
+    background-color: white;
+    /* Cor do scroll */
+    border-radius: 10px;
+    /* Deixa o scroll arredondado */
+    border: 2px solid transparent;
+    /* Adiciona espaçamento entre o scroll e o track */
+    background-clip: content-box;
+    /* Faz com que a cor de fundo apareça */
 }
+
 .whatsapp-float {
     position: fixed;
     width: 60px;

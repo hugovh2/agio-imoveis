@@ -27,10 +27,8 @@ Route::get('/login', [UsuarioController::class, 'showLogin'])->name('login.form'
 
 Route::get('/registro', [UsuarioController::class, 'showForm'])->name('register.form');
 
-
-Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
-
 Route::get('/sobre', [UsuarioController::class, 'showSobre'])->name('sobre.form');
 
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 Route::get('/home', [HomeController::class, 'home'])->name('home.form');
