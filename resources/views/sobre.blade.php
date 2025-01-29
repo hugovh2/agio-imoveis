@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     @vite(['resources/css/home.css', 'resources/js/agio.js'])
 </head>
+
 <body class="bg-gradient-to-r from-[#3EA76F] via-[#48C78E] to-[#A7EBC1]">
     <header>
         <nav class="navbar d-flex justify-content-between align-items-center">
@@ -28,7 +30,6 @@
         </nav>
     </header>
 
-
-
 </body>
+
 </html>
